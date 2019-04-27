@@ -18,8 +18,8 @@ os.system(Limpar)
 
 if sys.version_info[0] < 3:
 	versao = python_version()
-	print("\n\033[32m Você está usando o python na versão\033[1;m \033[1m\033[31m%s\033[1;m \033[32me ela é inferior ao python3 em diante.\033[1;m" %(versao))
-	print("\033[32m Por favor rode o Spy-Quiz com a versão superior ao python2.\033[1;m\n")
+	print("\n\033[32m  You are using python in version\033[1;m \033[1m\033[31m%s\033[1;m \033[32me and it is lower than python3 onwards.\033[1;m" %(versao))
+	print("\033[32m Please run the Spy-Quiz with the higher version than python2.\033[1;m\n")
 	exit(1)
 print("""\033[41m
 ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ 
@@ -29,7 +29,7 @@ print("""\033[41m
 ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \033[1;m
 """)
 try:
-	print("\n\033[31mDigite um nome de usuário para essa sessão:\033[1;m \n")
+	print("\n\033[31mEnter a user name for this session:\033[1;m \n")
 	usuario = input("\033[1;32m▬▶\033[1;m  ").upper()
 except:
 	exit(1)
@@ -49,23 +49,23 @@ def Apresentacao():
       ░           ░ ░            ░       ░      ░    ░ ░
                   ░ ░                              ░   \033[1;m
 
-\033[31m▬▶ USUÁRIO\033[1;m \033[33m%s\033[1;m \033[31mLOGADO!\033[1;m
+\033[31m▬▶ USER\033[1;m \033[33m%s\033[1;m \033[31mLOGGED!\033[1;m
 """ %(usuario))
 
 def Menu1():
 	Apresentacao()
 	print ('''
-[\033[1;32m*\033[1;m] Escolha uma das opções abaixo para continuar
+[\033[1;32m*\033[1;m] Choose one of the options below to continue
 
-\033[31m1\033[1;m) Iniciar
-\033[31m2\033[1;m) Sobre
-\033[31m3\033[1;m) Dependências
-\033[31m4\033[1;m) Permissões
-\033[31m5\033[1;m) Níveis
+\033[31m1\033[1;m) Start
+\033[31m2\033[1;m) About
+\033[31m3\033[1;m) Dependencies
+\033[31m4\033[1;m) Permissions
+\033[31m5\033[1;m) Levels
 
-\033[31mq\033[1;m) Sair
+\033[31mq\033[1;m) Exit
 ''')
-	opcao1 = input("\033[1;36mOpção:\033[1;m ")
+	opcao1 = input("\033[1;36mOption:\033[1;m ")
 	if opcao1 == "1":
 		Bloco1()
 	elif opcao1 == "2":
